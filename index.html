@@ -4,252 +4,152 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Thermen Apartment Bad Rodach</title>
+<title>Thermen Apartment Bad Rodach – 100m zur ThermeNatur</title>
 
-<meta name="description" content="Modernes Thermen Apartment Bad Rodach – nur 100 Meter zur ThermeNatur entfernt.">
+<meta name="description" content="Modernes Thermen Apartment in Bad Rodach – nur 100 Meter zur ThermeNatur. Perfekt für Urlaub, Erholung und Monteure. WLAN, Balkon und Parkplatz inklusive.">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-color:#222;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f8;
+    color:#222;
 }
 
-/* NAVIGATION */
+/* HEADER */
 
-nav{
-background:white;
-padding:20px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-position:sticky;
-top:0;
-z-index:1000;
+header{
+    background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("Schlafzimmer ChatGPT Image 3. Mai 2026, 22_26_07.png") center/cover no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:140px 20px;
 }
 
-.logo{
-font-size:24px;
-font-weight:bold;
+header h1{
+    font-size:52px;
+    margin-bottom:15px;
 }
 
-.menu a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-font-weight:bold;
-}
-
-/* HERO */
-
-.hero{
-display:grid;
-grid-template-columns:1.3fr 1fr;
-gap:0;
-background:white;
-margin:30px;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
-
-.hero img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-.hero-content{
-padding:50px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-}
-
-.hero-content span{
-color:#c89b3c;
-font-weight:bold;
-letter-spacing:1px;
-font-size:14px;
-margin-bottom:10px;
-}
-
-.hero-content h1{
-font-size:48px;
-margin-bottom:20px;
-line-height:1.1;
-}
-
-.hero-content p{
-font-size:18px;
-line-height:1.7;
-margin-bottom:25px;
-}
-
-.info-icons{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-margin-bottom:30px;
-text-align:center;
-font-size:15px;
+header p{
+    font-size:24px;
+    margin-bottom:25px;
 }
 
 .btn{
-display:inline-block;
-padding:15px 25px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-margin-right:10px;
+    display:inline-block;
+    background:#27ae60;
+    color:white;
+    padding:15px 28px;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-.btn-green{
-background:#b28b38;
-color:white;
+.btn:hover{
+    background:#219150;
+    transform:scale(1.03);
 }
 
-.btn-outline{
-border:2px solid #b28b38;
-color:#b28b38;
-background:white;
+/* CONTENT */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    margin-top:30px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+h2{
+    margin-top:0;
+    font-size:32px;
 }
 
 /* GALLERY */
 
 .gallery{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px;
-padding:0 30px 30px;
-}
-
-.gallery-item{
-position:relative;
-overflow:hidden;
-border-radius:15px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:18px;
 }
 
 .gallery img{
-width:100%;
-height:260px;
-object-fit:cover;
-display:block;
-transition:0.3s;
+    width:100%;
+    height:270px;
+    object-fit:cover;
+    border-radius:14px;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
 }
 
 .gallery img:hover{
-transform:scale(1.03);
+    transform:scale(1.02);
 }
 
-.label{
-position:absolute;
-bottom:0;
-left:0;
-right:0;
-padding:12px;
-background:linear-gradient(transparent,rgba(0,0,0,0.8));
-color:white;
-font-weight:bold;
-font-size:14px;
+/* TEXT */
+
+ul{
+    line-height:2;
+    font-size:18px;
 }
 
-/* INFO BOTTOM */
-
-.bottom{
-display:grid;
-grid-template-columns:1fr 1.5fr 0.9fr;
-gap:25px;
-padding:0 30px 40px;
+.text{
+    font-size:18px;
+    line-height:1.8;
 }
 
-.card{
-background:white;
-padding:30px;
-border-radius:18px;
-box-shadow:0 5px 15px rgba(0,0,0,0.06);
-}
-
-.card h2{
-margin-bottom:20px;
-font-size:28px;
-}
-
-.card ul{
-line-height:2;
-}
-
-.card p{
-line-height:1.9;
-}
-
-.price{
-font-size:22px;
-font-weight:bold;
-line-height:2;
-margin-bottom:20px;
-}
-
-.contact-btn{
-display:block;
-width:100%;
-text-align:center;
-margin-top:15px;
-padding:15px;
-border-radius:10px;
-font-weight:bold;
-text-decoration:none;
-}
-
-.whatsapp{
-background:#25D366;
-color:white;
-}
-
-.mail{
-background:#c89b3c;
-color:white;
+.preise{
+    font-size:24px;
+    line-height:2;
+    font-weight:bold;
 }
 
 /* FOOTER */
 
 footer{
-text-align:center;
-padding:30px;
-font-size:14px;
-color:#777;
+    text-align:center;
+    padding:40px;
+    color:#777;
+    font-size:15px;
 }
 
 /* MOBILE */
 
-@media(max-width:950px){
+@media(max-width:768px){
 
-.hero{
-grid-template-columns:1fr;
+header{
+    padding:100px 20px;
 }
 
-.gallery{
-grid-template-columns:1fr;
+header h1{
+    font-size:36px;
 }
 
-.bottom{
-grid-template-columns:1fr;
+header p{
+    font-size:18px;
 }
 
-.hero-content h1{
-font-size:36px;
+.gallery img{
+    height:220px;
 }
 
-.info-icons{
-grid-template-columns:repeat(2,1fr);
+h2{
+    font-size:26px;
 }
 
 }
@@ -259,208 +159,166 @@ grid-template-columns:repeat(2,1fr);
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- HEADER -->
 
-<nav>
+<header>
 
-<div class="logo">
-Thermen Apartment<br>
-<span style="font-size:13px;font-weight:normal;">Bad Rodach</span>
-</div>
-
-<div class="menu">
-<a href="#">Start</a>
-<a href="#">Ausstattung</a>
-<a href="#">Bilder</a>
-<a href="#">Lage</a>
-<a href="#">Kontakt</a>
-</div>
-
-</nav>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<img src="Wohnzimmer neu.png">
-
-<div class="hero-content">
-
-<span>MODERN & GEMÜTLICH</span>
-
-<h1>
-Thermen Apartment<br>
-Bad Rodach
-</h1>
+<h1>Thermen Apartment Bad Rodach</h1>
 
 <p>
-Nur 100 Meter von der ThermeNatur Bad Rodach entfernt.<br>
-Perfekt für Urlaub, Erholung und Monteure.
+Nur 100 Meter zur ThermeNatur • Modern • Ruhig • Für 1–4 Personen
 </p>
 
-<div class="info-icons">
-
-<div>
-👥<br>
-2–4<br>
-Personen
-</div>
-
-<div>
-🛏️<br>
-1<br>
-Schlafzimmer
-</div>
-
-<div>
-🛁<br>
-1<br>
-Badezimmer
-</div>
-
-<div>
-📶<br>
-WLAN<br>
-kostenlos
-</div>
-
-</div>
-
-<a class="btn btn-green" href="https://wa.me/491732441356">
-Verfügbarkeit anfragen
+<a class="btn" href="https://wa.me/491732441356">
+Jetzt über WhatsApp anfragen
 </a>
 
-<a class="btn btn-outline" href="#bilder">
-Bilder ansehen
-</a>
+</header>
 
-</div>
+<!-- CONTENT -->
 
-</section>
+<div class="container">
 
-<!-- GALLERY -->
-
-<section class="gallery" id="bilder">
-
-<div class="gallery-item">
-<img src="Wohnzimmer neu.png">
-<div class="label">Wohnzimmer</div>
-</div>
-
-<div class="gallery-item">
-<img src="Wohnzimmer 2 neu .png">
-<div class="label">Wohnzimmer 2</div>
-</div>
-
-<div class="gallery-item">
-<img src="Schlafzimmer ChatGPT Image 3. Mai 2026, 22_26_07.png">
-<div class="label">Schlafzimmer</div>
-</div>
-
-<div class="gallery-item">
-<img src="Schlafzimmer 2 ChatGPT Image 3. Mai 2026, 22_28_59.png">
-<div class="label">Schlafzimmer 2</div>
-</div>
-
-<div class="gallery-item">
-<img src="Bad neu.png">
-<div class="label">Badezimmer</div>
-</div>
-
-<div class="gallery-item">
-<img src="Dusche neu.png">
-<div class="label">Dusche</div>
-</div>
-
-<div class="gallery-item">
-<img src="Küche neu.png">
-<div class="label">Küche</div>
-</div>
-
-<div class="gallery-item">
-<img src="Hausflur neu.png">
-<div class="label">Hausflur</div>
-</div>
-
-<div class="gallery-item">
-<img src="Eingang neu.png">
-<div class="label">Eingang</div>
-</div>
-
-<div class="gallery-item">
-<img src="Bad 2 neu.png">
-<div class="label">Bad 2</div>
-</div>
-
-<div class="gallery-item">
-<img src="Fassade Parkplatz neu.png">
-<div class="label">Fassade & Parkplatz</div>
-</div>
-
-<div class="gallery-item">
-<img src="Hausflur.png">
-<div class="label">Außenbereich</div>
-</div>
-
-</section>
-
-<!-- BOTTOM -->
-
-<section class="bottom">
+<!-- UNTERKUNFT -->
 
 <div class="card">
 
-<h2>Ausstattung</h2>
+<h2>🏡 Die Unterkunft</h2>
+
+<p class="text">
+
+Modernes und gemütliches Apartment in ruhiger Lage in Bad Rodach.
+
+Perfekt für Urlauber, Thermengäste, Monteure und längere Aufenthalte.
+
+Die ThermeNatur Bad Rodach erreichen Sie bequem zu Fuß in wenigen Minuten.
+
+</p>
+
+</div>
+
+<!-- AUSSTATTUNG -->
+
+<div class="card">
+
+<h2>✨ Ausstattung</h2>
 
 <ul>
-<li>✔ WLAN kostenlos</li>
-<li>✔ Voll ausgestattete Küche</li>
-<li>✔ Bettwäsche & Handtücher</li>
-<li>✔ Parkplatz</li>
-<li>✔ Balkon</li>
-<li>✔ Ruhige Lage</li>
-<li>✔ Therme fußläufig erreichbar</li>
+<li>✔️ Für 1–4 Personen</li>
+<li>✔️ Balkon</li>
+<li>✔️ Kostenloses WLAN</li>
+<li>✔️ Voll ausgestattete Küche</li>
+<li>✔️ Modernes Badezimmer</li>
+<li>✔️ Parkplatz direkt vor dem Haus</li>
+<li>✔️ Ruhige Lage</li>
+<li>✔️ Perfekt für Thermengäste & Monteure</li>
 </ul>
 
 </div>
 
+<!-- BILDER -->
+
 <div class="card">
 
-<h2>Über die Wohnung</h2>
+<h2>📸 Eindrücke</h2>
 
-<p>
-Unsere moderne Ferienwohnung befindet sich in ruhiger Lage in Bad Rodach
-und bietet alles für einen entspannten Aufenthalt.
+<div class="gallery">
 
-Die ThermeNatur erreichen Sie bequem zu Fuß in wenigen Minuten.
+<!-- Außenbereich zuerst -->
 
-Perfekt für Urlauber, Erholungsgäste und Monteure.
+<img src="Fassade Parkplatz neu.png">
+
+<img src="Hausflur neu.png">
+
+<img src="Eingang neu.png">
+
+<!-- Wohnzimmer -->
+
+<img src="Wohnzimmer neu.png">
+
+<img src="Wohnzimmer 2 neu .png">
+
+<!-- Küche -->
+
+<img src="Küche neu.png">
+
+<!-- Schlafzimmer -->
+
+<img src="Schlafzimmer ChatGPT Image 3. Mai 2026, 22_26_07.png">
+
+<img src="Schlafzimmer 2 ChatGPT Image 3. Mai 2026, 22_28_59.png">
+
+<!-- Badezimmer -->
+
+<img src="Bad neu.png">
+
+<img src="Bad 2 neu.png">
+
+<img src="Dusche neu.png">
+
+</div>
+
+</div>
+
+<!-- PREISE -->
+
+<div class="card">
+
+<h2>💶 Preise</h2>
+
+<div class="preise">
+
+99 € / Nacht (2 Personen)<br>
+120 € / Nacht (bis 4 Personen)
+
+</div>
+
+</div>
+
+<!-- LAGE -->
+
+<div class="card">
+
+<h2>📍 Lage</h2>
+
+<p class="text">
+
+Das Apartment befindet sich in ruhiger Lage in Bad Rodach –
+nur ca. 100 Meter von der ThermeNatur entfernt.
+
+Restaurants, Einkaufsmöglichkeiten und Spazierwege befinden sich in direkter Nähe.
+
 </p>
 
 </div>
 
+<!-- KONTAKT -->
+
 <div class="card">
 
-<h2>Preise</h2>
+<h2>📞 Kontakt</h2>
 
-<div class="price">
-99 € / Nacht<br>
-120 € / Nacht
-</div>
+<p class="text">
 
-<h2>Kontakt</h2>
+Direkt buchen oder unverbindlich anfragen:
 
-<a class="contact-btn whatsapp" href="https://wa.me/491732441356">
+</p>
+
+<a class="btn" href="https://wa.me/491732441356">
 WhatsApp Anfrage
 </a>
 
-<a class="contact-btn mail" href="mailto:maxklinnert812@gmail.com">
+<br><br>
+
+<a class="btn" href="mailto:maxklinnert812@gmail.com">
 E-Mail schreiben
 </a>
 
 </div>
 
-</section>
+</div>
+
+<!-- FOOTER -->
 
 <footer>
 
